@@ -1,0 +1,115 @@
+.pre-book {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+
+}
+
+.pre-book h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    color: #2C2A2A;
+    text-align: center;
+}
+
+.pre-book p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #3C3C3C;
+    text-align: center;
+}
+
+.pre-book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #373737;
+    margin-bottom: 0.5rem;
+}
+
+.form-group i {
+    margin-right: 0.5rem;
+    color: #5F5F5F;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.75rem;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #F9ED32;
+    box-shadow: 0 0 4px rgba(249, 237, 50, 0.5);
+    outline: none;
+}
+
+.submit-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #F9ED32;
+    color: #202020;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: #FFF225;
+}
+
+.submit-button:active {
+    background-color: #E0E000;
+    transform: scale(0.98);
+}
+
+.error {
+    color: #E74C3C;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .pre-book {
+        padding: 1rem;
+    }
+
+    .pre-book h1 {
+        font-size: 1.75rem;
+    }
+
+    .pre-book p {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 0.875rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+    }
+}

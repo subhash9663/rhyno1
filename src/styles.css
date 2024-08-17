@@ -1,0 +1,97 @@
+/* General styling */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #424242;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #252525;
+    color: #FFFFFF;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #2C2A2A;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+  }
+  
+  .social-icons a {
+    color: #FFFFFF;
+    margin-left: 0.5rem;
+  }
+  
+  footer {
+    background-color: #2C2A2A;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .product, .home, .compare-all, .pre-book, .about-us, .contact-us, .rentals {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .product img, .home img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+ 
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+  }
+  

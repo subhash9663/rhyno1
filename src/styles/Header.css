@@ -1,0 +1,100 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the header stays above other content */
+    height: 4rem; /* Set a fixed height for the header */
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    height: 50px; /* Set a fixed height for the logo */
+}
+
+nav {
+    flex: 2;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative; /* Needed for dropdown positioning */
+    margin: 0 1.5rem; /* Increased space between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-size: 1.125rem; /* Font size for nav items */
+    font-weight: 600; /* Font weight for nav items */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker color on hover */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff; /* Background for dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown li a {
+    color: #007bff; /* Link color in dropdown */
+    font-size: 1rem; /* Font size for dropdown links */
+}
+
+.dropdown li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.social-icons a:hover {
+    color: #0056b3; 
+}
